@@ -1,0 +1,9 @@
+.git
+.mvn
+target
+portfolio-frontend
+*.md
+*.editorconfig
+.gitignore
+Dockerfile
+docker-compose.yml

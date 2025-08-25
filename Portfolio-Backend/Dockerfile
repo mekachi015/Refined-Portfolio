@@ -16,7 +16,7 @@ COPY src/ src/
 RUN ./mvnw clean package -DskipTests
 
 # Expose the port your app runs on
-EXPOSE 8080
+EXPOSE 8085
 
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "target/Portfolio-Backend-0.0.1-SNAPSHOT.jar"]
