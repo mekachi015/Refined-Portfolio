@@ -1,0 +1,4 @@
+spring:
+  mail:
+    username: katlegomakoti@gmail.com
+    password: ${SPRING_MAIL_PASSWORD}
