@@ -69,11 +69,11 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
+<script lang="ts">
+
 
 export default {
-  name: 'Contact',
+  name: 'ContactPage',
   data() {
     return {
       formData: {

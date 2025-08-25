@@ -29,9 +29,9 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  name: 'Skills',
+  name: 'SkillsPage',
   data() {
     return {
       skills: [
@@ -51,7 +51,7 @@ export default {
     }
   },
   methods: {
-    startAnimation(index) {
+    startAnimation(index: number) {
       if (!this.skills[index].animating) {
         this.skills[index].animating = true;
         setTimeout(() => {

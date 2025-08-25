@@ -5,7 +5,7 @@
       <div class="about-content">
         <div class="profile-card">
           <div class="profile-image">
-            <img src="@/assets/profile.jpg" alt="Katlego Makoti" />
+            <img :src="profileImage" alt="Katlego Makoti" />
           </div>
           <div class="profile-info">
             <h3>Katlego Makoti</h3>
@@ -15,13 +15,13 @@
         </div>
         <div class="about-text">
           <p>
-            I am a passionate full-stack developer with strong proficiency in Angular, Spring Boot, and PostgreSQL, 
-            complemented by hands-on experience in Salesforce development and administration. I build scalable, 
+            I am a passionate full-stack developer with strong proficiency in Angular, Spring Boot, and PostgreSQL,
+            complemented by hands-on experience in Salesforce development and administration. I build scalable,
             user-focused web applications with clean architecture and well-structured backend services.
           </p>
           <p>
-            My experience includes integrating third-party APIs, performance optimization, and delivering responsive 
-            user interfaces. I'm committed to continuous learning and staying up to date with evolving web and 
+            My experience includes integrating third-party APIs, performance optimization, and delivering responsive
+            user interfaces. I'm committed to continuous learning and staying up to date with evolving web and
             Salesforce technologies to deliver effective, modern solutions.
           </p>
           <p>
@@ -33,9 +33,16 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import profileImage from "C:/Users/katle/OneDrive/Desktop/Portfolio Refined/portfolio-frontend/src/assests/WhatsApp Image 2025-08-16 at 09.08.24_a16c76ac.jpg"
+
 export default {
-  name: 'About'
+  name: 'AboutPage',
+  data() {
+    return {
+      profileImage
+    }
+  }
 }
 </script>
 
@@ -119,7 +126,7 @@ export default {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .profile-card {
     max-width: 400px;
     margin: 0 auto;
@@ -130,7 +137,7 @@ export default {
   .section-title {
     font-size: 2rem;
   }
-  
+
   .profile-image {
     width: 150px;
     height: 150px;
