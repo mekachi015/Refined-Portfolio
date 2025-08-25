@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import profileImage from "C:/Users/katle/OneDrive/Desktop/Portfolio Refined/portfolio-frontend/src/assests/WhatsApp Image 2025-08-16 at 09.08.24_a16c76ac.jpg"
+const profileImage = "/public/whatsapp-image.jpg"
 
 export default {
   name: 'AboutPage',
