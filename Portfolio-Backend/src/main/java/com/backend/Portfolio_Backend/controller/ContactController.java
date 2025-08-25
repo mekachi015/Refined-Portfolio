@@ -36,6 +36,7 @@ public class ContactController {
 
             return ResponseEntity.ok().body("Message sent successfully.");
         } catch (Exception e){
+            System.out.println("Error submitting contact form: " + e.getMessage());
             return ResponseEntity.badRequest().body("Error submitting the form: " + e.getMessage());
         }
     }
