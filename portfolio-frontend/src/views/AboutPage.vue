@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts">
-const profileImage = "/public/whatsapp-image.jpg"
+const profileImage = "/public/whatsappImage.jpg"
 
 export default {
   name: 'AboutPage',
