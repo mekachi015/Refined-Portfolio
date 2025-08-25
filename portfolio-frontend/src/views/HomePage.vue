@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Katlego Makoti</h1>
-      <h2 class="hero-subtitle">Full-Stack Developer</h2>
+      <h2 class="hero-subtitle">Developer | Angular | Javascript | Typescript | Java | Python | Salesforce</h2>
       <div class="social-links">
         <a href="https://linkedin.com/in/katlego-makoti" target="_blank" class="social-link">
           <i class="fab fa-linkedin"></i>

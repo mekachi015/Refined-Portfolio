@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <router-link to="/">Katlego Makoti</router-link>
+        <router-link to="/">KM</router-link>
       </div>
       <ul class="nav-menu">
         <li class="nav-item">
@@ -27,7 +27,7 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'NavigationBar',
   mounted() {
