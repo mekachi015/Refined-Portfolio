@@ -1,5 +1,5 @@
 # Use official OpenJDK base image
-FROM openjdk:17-jdk-alpine
+FROM openjdk:21-oracle
 
 # Set working directory inside container
 WORKDIR /app
