@@ -1,5 +1,5 @@
 # Use official OpenJDK base image
-FROM openjdk:21-oracle
+FROM eclipse-temurin:21-jdk-alpine AS builder
 
 # Set working directory inside container
 WORKDIR /app
@@ -15,8 +15,13 @@ COPY src/ src/
 # Build the application
 RUN ./mvnw clean package -DskipTests
 
+# Runtime stage
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+COPY --from=builder /app/target/Portfolio-Backend-0.0.1-SNAPSHOT.jar app.jar
+
 # Expose the port your app runs on
 EXPOSE 8085
 
 # Command to run the application
-ENTRYPOINT ["java", "-jar", "target/Portfolio-Backend-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
